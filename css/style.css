@@ -1,0 +1,192 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header{
+     height: 65px;
+}
+header a{
+     color: black;
+}
+main{
+     color: white;
+}
+main{
+     height: 900px;
+     background-image: url(../hairSalonImages/header-background.JPG);
+     background-repeat: no-repeat;
+     background-size: 100%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav >*{
+     float: left;
+     width: 11%;
+     object-fit: none;
+}
+
+header nav ul   {
+     width: 60%;
+     margin: 0;
+     padding: 0;
+     margin-left: 10%;
+}
+header nav ul li{
+     list-style: none;
+     float: left;
+     padding: 3%;
+     margin: 0 ;
+     width: 14.28%;
+}
+header nav ul li a{
+text-decoration: none;
+}
+header nav ul li i{
+     margin-left: 40%;
+}
+header nav >a{
+     text-decoration: none;
+     padding: 1.8% 0;
+     margin-left: 8%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+main >div {
+     width: 60%;    
+     padding: 10%;
+}
+main >div *{
+
+     margin: 3% 0;
+}
+main span {
+     display: block;
+}
+main a{
+     background: black;
+     color: white;
+     text-decoration: none;
+     padding: 1%;
+}
+main h1{
+     margin: 0;
+     font-size: 4em;
+}
+main >div>aside{
+     width: 50%;
+     background: black;
+     height: 220px;
+}
+main >div>aside * {
+     padding: 3%;
+}
+main >div>aside a{
+     background: white;
+     color: black;
+     margin: 10%;
+}
+body >section:first-of-type div{
+     margin:3% 10%;
+}
+body >section:first-of-type div >*{
+     float: left;
+     width: 33%;
+     text-align: center;
+     padding: 2%;
+}
+body > div{
+     height: 400px;
+     background: rgb(243,244,246);
+}
+body > div {
+     padding:2% 8%;
+}
+body > div >*{
+     float: left;
+     width: 50%;
+}
+body > div section img{
+     width: 50%;
+     margin-left: 35%;
+     margin-top: 10%;
+}
+body > div section h2{
+     font-size: 3em;
+}
+body > div section a{
+     background: black;
+     color: white;
+     text-decoration: none;
+     padding: 1%;
+}
+body article section {
+     float: left;
+     width: 30%;
+     padding: 5%;
+}
+body article section div{
+     text-align: center;
+     background: black;
+     color: white;
+     margin: -10%;
+     margin-left: 10%;
+}
+body > article + section{
+     background-image: url(../hairSalonImages/banner.jpg);
+     height: 400px;
+     background-size: 80%;
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     font-size: 1.5em;
+}
+body > article + section div{
+     padding: 10% 15%;
+     width: 50%;
+}
+body > article + section div p span{
+     font-weight: bold;
+     font-size: 2em ;
+}
+body > article + section div a{
+     background: black;
+     color: white;
+     text-decoration: none;
+     padding: 1%;
+}
+body> section+section section{
+     float: left;
+     width: 33%;
+     padding: 1%;
+}
+body> section+section img{
+     width: 100%;
+}
+body> section+section  h2{
+     text-align: center;
+     font-size: 2em;
+}
+body> section+section section:first-of-type img:first-of-type{
+     padding-bottom: 25%;
+}
